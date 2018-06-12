@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Auto Outline Options</title>
+  <style>
+    html.loading * {
+      -webkit-transition-delay: 0 !important;
+      -webkit-transition-duration: 0 !important;
+    }
+
+    body {
+      cursor: default;
+      margin: 0;
+      font-family:'Segoe UI', Tahoma, sans-serif;
+      font-size: 75%;
+      color:rgb(48, 57, 66);
+      padding:10px 20px;
+    }
+
+    textarea{
+      height:350px;
+      width:500px;
+    }
+
+    label {
+      display: block;
+      margin: 15px;
+      font-weight: bold;
+      clear:both;
+    }
+    .button-row{
+      margin: 15px;
+      min-height: 40px;
+      clear:both;
+    }
+    .button-row button {
+      font-weight: bold;
+      font-size: 14px;
+      padding: 8px 20px;
+      float: left;
+      clear:both;
+    }
+    #status {
+      float: left;
+      margin: 10px;
+      color: #5A5;
+      opacity: 0;
+      transition: opacity 0.1s;
+    }
+    #status.shown {
+      opacity:1;
+      transition: opacity 0.1s;
+    }
+    .indent{
+      margin-left:30px;
+    }
+    label, p{
+      float: left;
+    }
+    p.info{
+      margin:15px;
+    }
+  </style>
+</head>
+<body>
+
+  <p>URLs or patterns to match (one per line, case-insensitive):</p>
+  <label class='opt'>
+    <textarea type="text" id="input">http://latimes.com/*</textarea>
+  </label>
+
+  <div class='button-row'>
+    <button id="save">Save</button>
+    <div id="status">Options saved</div>
+  </div>
+
+  <script src="options.js"></script>
+</body>
+</html>

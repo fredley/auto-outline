@@ -1,0 +1,42 @@
+<html>
+<head>
+  <style>
+    a{
+      position: absolute;
+      top: 5px;
+      right: 5px;
+      color: #999;
+      font-size: 10px;
+    }
+    #main{
+      min-width:190px;
+      padding:10px;
+      text-align: center;
+    }
+    button{
+      background: #fff;
+      border: 2px solid #555;
+      font-weight: bold;
+      font-size: 14px;
+      border-radius: 3px;
+      margin-top:10px;
+    }
+    input{
+      min-width: 150px;
+    }
+    .hidden{
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <div id="main">
+    <a href="#" id="options">Options</a>
+    <p>Redirect this site to Outline:</p>
+    <input id="input">
+    <button id="cancel">Cancel</button>
+    <button id="save">Save</button>
+  </div>
+  <script type="text/javascript" src="popup.js"></script>
+</body>
+</html>
